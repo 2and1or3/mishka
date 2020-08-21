@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -21,7 +22,7 @@
           </li>
           <li class="navigation__item">
             <a class="navigation__link logo-link">
-              <img src="logo" alt="Логотип магазина Мишка" class="logo-link__img">
+              <img src="../img/logo-mobile.svg" alt="Логотип магазина Мишка" class="logo-link__img">
             </a>
           </li>
         </ul>
@@ -30,6 +31,7 @@
       <div class="tools-panel">
         <div class="search-box">
           <input type="text" class="search">
+          Поиск по сайту
         </div>
         <div class="cart">
           <p class="cart__status">Корзина: пока пуста</p>
@@ -58,12 +60,12 @@
     <section class="promo">
       <span class="promo__title">Милые штуки ручной работы для дома</span>
       <ul class="promo__catalog-fast catalog-fast">
-        <li class="catalog-fast__item">
+        <li class="catalog-fast__item catalog-fast__item--green_1">
           <a href="catalog.html" class="catalog-fast__link">
             Предметы интерьера
           </a>
         </li>
-        <li class="catalog-fast__item">
+        <li class="catalog-fast__item catalog-fast__item--green_2">
           <a href="catalog.html" class="catalog-fast__link">
             Детские игрушки
           </a>
@@ -94,6 +96,7 @@
           <td class="table__cell">15 см</td>
         </tr>
       </table>
+      <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзинки">
       <p class="special__price">Цена: 990 руб.</p>
       <a href="form.html" class="special__button">Заказать</a>
     </section>
@@ -172,13 +175,15 @@
           д. 19/8, офис 101
         </span>
       </address>
-      <div class="contact-box__map map"></div>
+      <div class="contact-box__map map">
+        <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </div>
       <a href="#" class="contact-box__contact-button">Напишите нам</a>
     </section>
   </main>
   <footer class="footer">
     <a class="footer__logo logo-link">
-      <img src="logo" alt="Логотип магазина Мишка" class="logo-link__img">
+      <img src="img/logo-footer.svg" alt="Логотип магазина Мишка" class="logo-link__img">
     </a>
     <ul class="footer__social social">
       <li class="social__item"><a href="" class="social__link"></a></li>
@@ -187,7 +192,9 @@
     </ul>
     <p class="copyright">
       Разработано
-      <a class="copyright__icon"></a>
+      <a class="copyright__icon">
+        <img src="img/logo-htmlacademy.svg" alt="логотип htmlAcademy">
+      </a>
     </p>
   </footer>
 </body>

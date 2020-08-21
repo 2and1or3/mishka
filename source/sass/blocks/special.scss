@@ -1,0 +1,25 @@
+.special {
+  color: $grey-1;
+  padding: 10px;
+}
+
+.special__title {
+  @include section-title;
+}
+
+.special__label {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $green-1;
+}
+
+.special__price {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.special__button {
+  @include grey-button;
+}

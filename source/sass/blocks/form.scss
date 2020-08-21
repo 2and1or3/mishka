@@ -1,0 +1,31 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  font-size: 17px;
+  line-height: 17px;
+  color: $green-1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.form__colors {
+  @include list-reset;
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-1;
+}
+
+.form__submit {
+  @include grey-button;
+}

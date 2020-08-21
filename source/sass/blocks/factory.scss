@@ -1,0 +1,12 @@
+.factory__title {
+  font-weight: bold;
+}
+
+.factory__description {
+  font-size: 13px;
+  color: $grey-1;
+}
+
+.factory__button {
+  @include grey-button;
+}

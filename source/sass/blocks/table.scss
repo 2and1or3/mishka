@@ -1,0 +1,12 @@
+.table {
+  line-height: 20px;
+  border-collapse: collapse;
+}
+
+.table__row {
+  border-bottom: 1px solid $grey-1;
+}
+
+.table__cell {
+  padding: 10px;
+}

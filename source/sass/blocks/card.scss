@@ -1,0 +1,19 @@
+.card__text-box {
+  border: 1px solid $grey-4;
+}
+
+.card__title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card__parametrs {
+  font-size: 13px;
+  line-height: 30px;
+  color: $grey-1;
+}
+
+.card__price {
+  font-weight: bold;
+  border-top: 1px solid $grey-4;
+}

@@ -1,0 +1,17 @@
+.header__top {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.header__list {
+  @include list-reset;
+}
+
+.header__bottom {
+  background-color: $grey-2;
+}
+
+.header__title {
+  font-size: 27px;
+  line-height: 30px;
+}

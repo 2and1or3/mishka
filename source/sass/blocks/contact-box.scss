@@ -1,0 +1,13 @@
+.contact-box {
+  line-height: 30px;
+  color: $grey-1;
+}
+
+.contact-box__title {
+  font-size: 18px;
+  color: #000000;
+}
+
+.contact-box__contact-button {
+  @include grey-button;
+}

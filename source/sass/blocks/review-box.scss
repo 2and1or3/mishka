@@ -1,0 +1,30 @@
+.review-box {
+  padding: 10px;
+}
+
+.review-box__title {
+  @include section-title;
+}
+
+.review-box__item {
+  line-height: 30px;
+  color: $grey-1;
+  margin: 0;
+}
+
+.review-box__author {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.review-box__nick {
+  color: $grey-1;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.review-box__add {
+  @include grey-button;
+}

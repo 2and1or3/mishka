@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -78,37 +79,37 @@
         <legend class="form__legend">Цвет</legend>
         <ul class="form__colors">
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox" checked>
               Белый
             </label>
           </li>
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox" checked>
               Серый
             </label>
           </li>
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox">
-              Тиффани
+              «Тиффани»
             </label>
           </li>
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox">
               Черный
             </label>
           </li>
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox">
               Розовый
             </label>
           </li>
           <li>
-            <label>
+            <label class="form__label">
               <input type="checkbox" class="checkbox">
               Оранжевый
             </label>
@@ -118,19 +119,19 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">ФИО</legend>
         <span>
-          <label>
+          <label class="form__label">
             Имя:
             <input type="text" name="name" placeholder="Введите ваше имя*" required>
           </label>
         </span>
         <span>
-          <label>
+          <label class="form__label">
             Фамилия:
             <input type="text" name="second_name" placeholder="Укажите фамилию*" required>
           </label>
         </span>
         <span>
-          <label>
+          <label class="form__label">
             Отчество:
             <input type="text" name="father_name" placeholder="Отчество, если желаете">
           </label>
@@ -138,13 +139,13 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Тел</legend>
-        <label for="#phone" class="visually-hidden">Номер телефона</label>
-        <input id="#phone" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <label for="phone" class="visually-hidden">Номер телефона</label>
+        <input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">e-mail</legend>Ваш Email*
-        <label for="#mail" class="visually-hidden">Почта</label>
-        <input id="#mail" type="text" name="mail" placeholder="Ваш Email*" required>
+        <label for="mail" class="visually-hidden">Почта</label>
+        <input id="mail" type="text" name="mail" placeholder="Ваш Email*" required>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Доп</legend>

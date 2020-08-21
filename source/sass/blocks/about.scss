@@ -1,0 +1,7 @@
+.about {
+  padding: 10px;
+}
+
+.about__title {
+  @include section-title;
+}

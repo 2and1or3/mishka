@@ -1,0 +1,10 @@
+.advantages {
+  @include list-reset;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.advantages__item {
+  margin-bottom: 10px;
+}
