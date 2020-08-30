@@ -1,4 +1,32 @@
 .footer {
-  padding: 20px;
+  padding: 20px 0 23px;
   background-color: $grey-2;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__social {
+  margin-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 52px 0;
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    display: initial;
+    margin-right: 70px;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+  }
 }

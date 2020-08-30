@@ -9,6 +9,16 @@
   line-height: 30px;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 @mixin grey-button {
@@ -16,8 +26,25 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px 50px;
+  padding: 14px 30px;
   border: 2px solid $grey-1;
   display: block;
   background-color: #ffffff;
+  text-align: center;
+}
+
+@mixin common-wrapper {
+  max-width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    padding: 0 50px;
+  }
 }

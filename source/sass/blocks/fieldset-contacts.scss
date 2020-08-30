@@ -1,0 +1,56 @@
+.fieldset-contacts__legend {
+  margin-bottom: 3px;
+}
+
+.fieldset-contacts__box {
+  display: block;
+  margin-bottom: 33px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset-contacts__input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  padding: 14px 0 13px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.fieldset-contacts__input--big {
+  font-size: 19px;
+  line-height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-contacts {
+    padding-left: 0;
+  }
+
+  .fieldset-contacts__box {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 217px;
+  }
+
+  .fieldset-contacts__legend {
+    top: 17px;
+  }
+
+  .fieldset-contacts__input {
+    padding: 12px 17px;
+    box-sizing: border-box;
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-contacts__input {
+    padding-left: 24px;
+  }
+}

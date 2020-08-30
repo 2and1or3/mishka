@@ -1,0 +1,23 @@
+.tools-panel {
+  @include list-reset;
+}
+
+.tools-panel__item {
+  border-bottom: 1px solid $grey-5;
+  padding: 26px 26px 26px 75px;
+}
+
+.tools-panel__search {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .tools-panel {
+    display: flex;
+  }
+
+  .tools-panel__item {
+    padding: 0;
+    border-bottom: none;
+  }
+}

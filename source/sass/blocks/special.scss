@@ -1,10 +1,11 @@
 .special {
   color: $grey-1;
-  padding: 10px;
+  padding: 30px 0;
 }
 
 .special__title {
   @include section-title;
+  margin-bottom: 2px;
 }
 
 .special__label {
@@ -15,11 +16,114 @@
   color: $green-1;
 }
 
+.special__header {
+  margin-bottom: 21px;
+}
+
+.special__description {
+  margin: 0 0 17px;
+}
+
+.special__table {
+  margin-bottom: 25px;
+}
+
 .special__price {
   font-size: 17px;
   font-weight: bold;
+  margin: 20px 0 25px;
+  text-align: center;
 }
 
 .special__button {
   @include grey-button;
+}
+
+@media (min-width: $tablet-width) {
+  .special {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .special__card {
+    position: relative;
+  }
+
+  .special__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 47px;
+  }
+
+  .special__title {
+    margin: 0;
+  }
+
+  .special__label {
+    width: 125px;
+    text-align: center;
+    line-height: 17px;
+  }
+
+  .special__text-box {
+    padding-right: 376px;
+  }
+
+  .special__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .special__table {
+    margin-bottom: 55px;
+  }
+
+  .special__price {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .special__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special {
+    padding-top: 118px;
+  }
+
+  .special__card {
+    padding-left: 169px;
+  }
+
+  .special__header {
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .special__label {
+    position: absolute;
+    top: 14px;
+    left: -150px;
+  }
+
+  .special__text-box {
+    padding-left: 6px;
+    padding-right: 583px;
+  }
+
+  .special__description {
+    margin-bottom: 47px;
+  }
+
+  .special__table {
+    margin-bottom: 108px;
+  }
 }

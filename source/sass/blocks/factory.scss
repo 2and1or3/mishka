@@ -1,12 +1,87 @@
 .factory__title {
   font-weight: bold;
+  font-size: 17px;
+  margin: 0;
+  border: 1px solid $grey-5;
+  padding: 25px 25px 25px 90px;
+}
+
+.factory__preview {
+  display: block;
+}
+
+.factory__box {
+  border: 1px solid $grey-5;
+  padding: 24px 33px 32px;
 }
 
 .factory__description {
   font-size: 13px;
   color: $grey-1;
+  margin: 0 0 25px;
 }
 
 .factory__button {
   @include grey-button;
+  padding: 14px 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .factory {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .factory__preview {
+    width: 668px;
+    height: 455px;
+    order: -1;
+  }
+
+  .factory__title {
+    border-bottom: none;
+    font-size: 20px;
+    padding: 38px 38px 0 105px;
+  }
+
+  .factory__box {
+    border-top: none;
+    padding: 32px 40px 45px;
+  }
+
+  .factory__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .factory {
+    position: relative;
+    padding-left: 682px;
+    min-height: 455px;
+  }
+
+  .factory__title {
+    border-left: none;
+    padding: 95px 95px 0 78px;
+  }
+
+  .factory__preview {
+    width: 682px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .factory__box {
+    border-left: none;
+    padding: 32px 58px 59px 80px;
+  }
+
+  .factory__description {
+    margin-bottom: 47px;
+  }
 }

@@ -1,9 +1,10 @@
 .review-box {
-  padding: 10px;
+  padding: 26px 0 42px;
 }
 
 .review-box__title {
   @include section-title;
+  margin-bottom: 25px;
 }
 
 .review-box__item {
@@ -16,6 +17,9 @@
   color: #000000;
   font-weight: bold;
   font-size: 17px;
+  display: block;
+  margin-top: 22px;
+  font-style: normal;
 }
 
 .review-box__nick {
@@ -27,4 +31,83 @@
 
 .review-box__add {
   @include grey-button;
+}
+
+@media (min-width: $tablet-width) {
+  .review-box {
+    background: url("../../img/review@1x.jpg") no-repeat 0 0;
+    padding-top: 72px;
+    padding-bottom: 110px;
+  }
+
+  .review-box__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .review-box__title {
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+
+  .review-box__slider {
+    order: 1;
+    width: 100%;
+  }
+
+  .review-box__item {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review-box__author {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 56px;
+  }
+
+  .review-box__nick {
+    font-size: 17px;
+    line-height: 30px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .review-box__add {
+    min-width: 110px;
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-box {
+    padding: 0;
+    background: none;
+  }
+
+  .review-box__inner {
+    padding-top: 65px;
+    padding-bottom: 155px;
+    padding-left: 170px;
+    background: url("../../img/review@1x.jpg") no-repeat 0 0;
+  }
+
+  .review-box__title {
+    margin-bottom: 48px;
+  }
+
+  .review-box__item {
+    padding-right: 100px;
+  }
+
+  .review-box__author {
+    margin-top: 39px;
+    font-size: 17px;
+  }
+
+  .review-box__add {
+    margin-top: 15px;
+  }
 }

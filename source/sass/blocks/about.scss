@@ -1,7 +1,32 @@
 .about {
-  padding: 10px;
+  padding: 39px 0 30px;
 }
 
 .about__title {
   @include section-title;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 68px 0 83px;
+  }
+
+  .about__title {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 105px 0 91px;
+  }
+
+  .about__box {
+    padding: 0 170px;
+  }
+
+  .about__title {
+    margin-bottom: 48px;
+  }
 }

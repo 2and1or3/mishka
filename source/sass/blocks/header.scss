@@ -1,3 +1,7 @@
+.header__toggle {
+  display: none;
+}
+
 .header__top {
   font-size: 17px;
   font-weight: bold;
@@ -7,11 +11,112 @@
   @include list-reset;
 }
 
-.header__bottom {
-  background-color: $grey-2;
-}
-
 .header__title {
   font-size: 27px;
   line-height: 30px;
+  margin: 0;
+  text-align: center;
+  padding: 77px 0;
+}
+
+.header__bottom {
+  background-color: $grey-6;
+}
+
+.header__bottom-wrapper {
+  max-width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header__updates {
+  @include list-reset;
+  display: none;
+}
+
+.header__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    background: linear-gradient(white 89px, $grey-5 89px, $grey-5 90px, $grey-6 90px, $grey-6 100%);
+  }
+
+  .header__top-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header__bottom-wrapper {
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 38px 0 78px;
+  }
+
+  .header__delivery {
+    position: absolute;
+    top: 106px;
+    right: 50px;
+    display: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    background: none;
+    padding: 0;
+  }
+
+  .header__nav {
+    flex-grow: 1;
+  }
+
+  .header__top {
+    min-height: 89px;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey-5;
+  }
+
+  .header__top-wrapper {
+    max-width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .header__bottom-wrapper {
+    max-width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .header__updates {
+    display: block;
+    font-weight: bold;
+  }
+
+  .header__title {
+    width: 100%;
+    padding: 51px 0 101px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .header__delivery {
+    position: static;
+  }
 }

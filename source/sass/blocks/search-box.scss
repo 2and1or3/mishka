@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .search-box {
+    width: 83px;
+    min-height: 89px;
+    border-left: 1px solid $grey-5;
+    border-right: 1px solid $grey-5;
+    padding: 0;
+  }
+
+  .search-box__text {
+    display: none;
+  }
+}

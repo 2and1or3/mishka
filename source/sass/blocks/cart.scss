@@ -1,0 +1,12 @@
+@media (min-width: $tablet-width) {
+  .cart {
+    width: 263px;
+    min-height: 89px;
+    display: flex;
+  }
+
+  .cart__status {
+    padding-left: 80px;
+    margin: auto 0;
+  }
+}

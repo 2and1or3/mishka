@@ -1,13 +1,144 @@
 .contact-box {
   line-height: 30px;
   color: $grey-1;
+  position: relative;
+  padding: 45px 0 40px;
+}
+
+.contact-box__wrapper {
+  @include common-wrapper;
 }
 
 .contact-box__title {
   font-size: 18px;
   color: #000000;
+  margin: 0 0 26px;
+}
+
+.contact-box__email {
+  margin: 0 0 30px;
+  display: flex;
+}
+
+.contact-box__email span {
+  margin-right: 29px;
+}
+
+.contact-box__email a {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background: $green-1;
+  }
+}
+
+.contact-box__address {
+  font-style: normal;
+  display: flex;
+}
+
+.address__label {
+  margin-right: 29px;
 }
 
 .contact-box__contact-button {
   @include grey-button;
+  margin-top: 533px;
+}
+
+.contact-box__map {
+  position: absolute;
+  bottom: 122px;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-box {
+    padding: 81px 0 55px;
+  }
+
+  .contact-box__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-box__title {
+    @include section-title;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .contact-box__email {
+    font-size: 17px;
+    line-height: 30px;
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .contact-box__email span {
+    margin-right: 23px;
+  }
+
+  .contact-box__address {
+    font-size: 17px;
+    line-height: 30px;
+    width: 50%;
+  }
+
+  .contact-box__address span {
+    margin-right: 23px;
+  }
+
+  .contact-box__contact-button {
+    margin: 568px auto 0;
+    min-width: 165px;
+  }
+
+  .contact-box__map {
+    bottom: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-box {
+    padding: 97px 0 105px;
+  }
+
+  .contact-box__inner {
+    display: block;
+    padding-right: 570px;
+    padding-top: 72px;
+    padding-left: 172px;
+    position: relative;
+  }
+
+  .contact-box__email {
+    width: auto;
+  }
+
+  .contact-box__address {
+    width: auto;
+    margin-bottom: 80px;
+  }
+
+  .contact-box__address span:last-child {
+    margin-right: 0;
+  }
+
+  .contact-box__contact-button {
+    margin: 0 75px 0 0;
+  }
+
+  .contact-box__map {
+    left: auto;
+    right: 0;
+    bottom: 0;
+  }
 }

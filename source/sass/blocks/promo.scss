@@ -1,11 +1,45 @@
 .promo {
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat 50% 50%;
+  background: $grey-6 url("../../img/hero-mobile@1x.jpg") no-repeat 50% 0;
 }
 
 .promo__title {
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  font-size: bold;
+  font-weight: bold;
   margin: 0;
+  padding-top: 78px;
+  padding-bottom: 121px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: $grey-6 url("../../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+    padding-top: 25px;
+  }
+
+  .promo__wrapper {
+    @include common-wrapper;
+  }
+
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 70px;
+    padding-bottom: 373px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background: $grey-6 url("../../img/hero-desktop@1x.jpg") no-repeat 50% 0;
+    padding-top: 21px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 90px 60px 360px;
+  }
 }

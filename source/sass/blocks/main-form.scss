@@ -1,0 +1,32 @@
+.main-form {
+  padding: 20px 0 56px;
+}
+
+.main-form__message {
+  font-size: 13px;
+  color: $grey-1;
+  margin: 0 0 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    padding: 73px 0 42px;
+  }
+
+  .main-form__message {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    padding: 123px 0 49px;
+  }
+
+  .main-form__message {
+    padding-left: 175px;
+    padding-right: 150px;
+  }
+}

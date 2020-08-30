@@ -4,12 +4,11 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  background: $green-1;
 }
 
-.catalog-fast__item {
-  padding: 20px;
-
+.catalog-fast__link {
+  padding: 27px 150px 27px 0;
+  display: block;
 
   &--green_1 {
     background-color: $green-1;
@@ -17,5 +16,40 @@
 
   &--green_2 {
     background-color: $green-2;
+  }
+}
+
+.catalog-fast__wrapper {
+  @include common-wrapper;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-fast {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog-fast__item {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .catalog-fast__link {
+    padding: 30px 130px 35px 35px;
+  }
+
+  .catalog-fast__wrapper {
+    display: initial;
+    padding: 0;
+    margin: 0;
+    max-width: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-fast__link {
+    padding-right: 310px;
   }
 }

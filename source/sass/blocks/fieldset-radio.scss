@@ -1,0 +1,61 @@
+.fieldset-radio__legend {
+  margin-bottom: 25px;
+}
+
+.fieldset-radio__label {
+  padding: 10px 40px 10px 63px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset-radio__custom-input {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid $grey-1;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.fieldset-radio__input:checked ~ .fieldset-radio__custom-input::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $green-1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-radio__label {
+    padding: 16px 0 16px 81px;
+    margin-bottom: 25px;
+  }
+
+  .fieldset-radio__custom-input {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fieldset-radio__input:checked ~ .fieldset-radio__custom-input::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-radio__label {
+    display: block;
+  }
+}

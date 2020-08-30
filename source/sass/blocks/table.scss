@@ -1,12 +1,30 @@
 .table {
   line-height: 20px;
   border-collapse: collapse;
+  width: 100%;
+  text-align: left;
 }
 
 .table__row {
-  border-bottom: 1px solid $grey-1;
+  border-bottom: 1px solid $grey-5;
 }
 
 .table__cell {
-  padding: 10px;
+  padding: 10px 10px 10px 0;
+}
+
+.table__cell:first-child {
+  padding-right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .table__cell:first-child {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table__cell:first-child {
+    padding-right: 5px;
+  }
 }

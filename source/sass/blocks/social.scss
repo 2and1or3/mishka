@@ -1,4 +1,29 @@
 .social {
   @include list-reset;
   border-bottom: 1px solid $grey-3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 27px;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

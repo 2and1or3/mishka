@@ -3,8 +3,50 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  margin-bottom: -28px;
 }
 
 .advantages__item {
-  margin-bottom: 10px;
+  padding-top: 55px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -56px;
+  }
+
+  .advantages__item {
+    width: 50%;
+    padding-top: 55px;
+    margin-bottom: 56px;
+  }
+
+  .advantages__item:nth-child(1) {
+    order: 1;
+  }
+
+  .advantages__item:nth-child(2) {
+    order: 3;
+  }
+
+  .advantages__item:nth-child(3) {
+    order: 5;
+  }
+
+  .advantages__item:nth-child(4) {
+    order: 2;
+  }
+
+  .advantages__item:nth-child(5) {
+    order: 4;
+  }
+
+  .advantages__item:nth-child(6) {
+    order: 6;
+  }
 }

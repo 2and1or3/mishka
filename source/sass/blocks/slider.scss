@@ -1,3 +1,49 @@
 .slider__list {
   @include list-reset;
+  margin-bottom: 30px;
+}
+
+.slider__list li:not(:first-child) {
+  display: none;
+}
+
+.slider__buttons {
+  margin: 0;
+  min-height: 50px;
+  border: 1px solid $grey-5;
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.slider__buttons button {
+  width: 50%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.slider__prev {
+  border: none;
+  border-right: 1px solid $grey-5;
+}
+
+.slider__next {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__list {
+    margin: 0;
+  }
+
+  .slider__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 167px;
+    margin: 0;
+  }
 }
