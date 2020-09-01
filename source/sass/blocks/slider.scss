@@ -19,6 +19,16 @@
   width: 50%;
   padding: 0;
   background-color: transparent;
+  color: $slider-button;
+
+  &:hover,
+  &:focus {
+    color: $slider-button-hover;
+  }
+
+  &:active {
+    color: $slider-button-active;
+  }
 }
 
 .slider__prev {
@@ -43,7 +53,12 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    min-width: 167px;
+    min-width: 170px;
     margin: 0;
+    border: none;
+  }
+
+  .slider__prev {
+    border: none;
   }
 }

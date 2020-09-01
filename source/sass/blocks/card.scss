@@ -5,12 +5,31 @@
 .card__text-box {
   border: 1px solid $grey-4;
   padding: 25px 27px 27px;
+
+  &:hover {
+    box-shadow: 0 5px 10px -5px $grey-1;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px -5px $grey-1;
+  }
 }
 
 .card__title {
   font-size: 17px;
   font-weight: bold;
   margin: 0 0 5px;
+}
+
+.card__title a {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card__parametrs {
@@ -25,6 +44,25 @@
   border-top: 1px solid $grey-4;
   margin: 0;
   padding: 21px 0 0;
+  padding-right: 20px;
+  position: relative;
+  display: block;
+
+  &:hover .card__cart-icon,
+  &:focus .card__cart-icon {
+    color: $card-icon-hover;
+  }
+
+  &:active .card__cart-icon {
+    color: $card-icon-active;
+  }
+}
+
+.card__cart-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $card-icon;
 }
 
 @media (min-width: $tablet-width) {

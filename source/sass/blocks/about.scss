@@ -2,6 +2,10 @@
   padding: 39px 0 30px;
 }
 
+.about--with-zigzag {
+  @include with-top-zigzag-line;
+}
+
 .about__title {
   @include section-title;
   margin-bottom: 30px;

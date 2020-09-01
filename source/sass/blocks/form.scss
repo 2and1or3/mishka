@@ -49,6 +49,13 @@
   box-sizing: border-box;
   padding: 15px 15px 21px;
   resize: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $control-hover;
+    outline: none;
+  }
 }
 
 .form__required {

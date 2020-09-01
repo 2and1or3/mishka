@@ -1,3 +1,26 @@
+.search-box {
+  position: relative;
+
+  &:hover .search-box__icon,
+  &:focus .search-box__icon {
+    color: $tools-icon-hover;
+  }
+
+  &:active .search-box__icon {
+    color: $tools-icon-active;
+  }
+}
+
+.search-box__icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  color: $tools-icon;
+  transform: translateY(-50%);
+}
+
 @media (min-width: $tablet-width) {
   .search-box {
     width: 83px;

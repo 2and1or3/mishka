@@ -5,6 +5,10 @@
   padding: 45px 0 40px;
 }
 
+.contact-box--with-zigzag {
+  @include with-top-zigzag-line;
+}
+
 .contact-box__wrapper {
   @include common-wrapper;
 }
@@ -27,6 +31,15 @@
 .contact-box__email a {
   position: relative;
 
+  &:hover,
+  &:focus {
+    color: $green-1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -41,6 +54,10 @@
 .contact-box__address {
   font-style: normal;
   display: flex;
+}
+
+.contact-box__address span {
+  margin-right: 29px;
 }
 
 .address__label {
@@ -61,12 +78,14 @@
 
 @media (min-width: $tablet-width) {
   .contact-box {
-    padding: 81px 0 55px;
+    padding: 65px 0 55px;
   }
 
   .contact-box__inner {
+    padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
+    background: url("../../img/icon-flag.svg") no-repeat right top;
   }
 
   .contact-box__title {
@@ -117,6 +136,7 @@
     padding-top: 72px;
     padding-left: 172px;
     position: relative;
+    background-position: 65px 65px;
   }
 
   .contact-box__email {

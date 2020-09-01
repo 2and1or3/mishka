@@ -3,7 +3,16 @@
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0;
+
+  &:hover .fieldset-checkboxes__custom-input {
+    border: 2px solid $control-hover;
+  }
+
+  &:active .fieldset-checkboxes__custom-input {
+    border: 2px solid $control-active;
+  }
 }
+
 
 .fieldset-checkboxes__legend {
   margin-bottom: 22px;
@@ -44,6 +53,10 @@
   border: 2px solid $grey-1;
   border-top: none;
   border-right: none;
+}
+
+.fieldset-checkboxes__input:focus ~ .fieldset-checkboxes__custom-input {
+  border: 2px solid $control-hover;
 }
 
 @media (min-width: $tablet-width) {

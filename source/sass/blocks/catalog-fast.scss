@@ -7,8 +7,16 @@
 }
 
 .catalog-fast__link {
-  padding: 27px 150px 27px 0;
   display: block;
+
+  &:hover .catalog-fast__icon,
+  &:focus .catalog-fast__icon {
+    color: $catalog-fast-icon-hover;
+  }
+
+  &:active .catalog-fast__icon {
+    color: $catalog-fast-icon-active;
+  }
 
   &--green_1 {
     background-color: $green-1;
@@ -20,8 +28,30 @@
 }
 
 .catalog-fast__wrapper {
-  @include common-wrapper;
+  max-width: 320px;
+  padding: 27px 150px 27px 30px;
+  margin: 0 auto;
   display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.catalog-fast__icon {
+  position: absolute;
+  top: 23px;
+  right: 27px;
+  color: $catalog-fast-icon;
+
+  &--interier {
+    right: 35px;
+    width: 40px;
+    height: 62px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +68,12 @@
 
   .catalog-fast__link {
     padding: 30px 130px 35px 35px;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      transform: translate(0, -5px);
+    }
   }
 
   .catalog-fast__wrapper {
@@ -45,6 +81,23 @@
     padding: 0;
     margin: 0;
     max-width: initial;
+    position: static;
+  }
+
+  .catalog-fast__icon {
+    top: 30px;
+    right: 34px;
+
+    &--interier {
+      right: 35px;
+      width: 40px;
+      height: 62px;
+    }
+
+    &--toy {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 

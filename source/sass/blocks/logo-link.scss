@@ -1,0 +1,12 @@
+.logo-link {
+  color: $footer-logo;
+
+  &:hover,
+  &:focus {
+    color: $footer-logo-hover;
+  }
+
+  &:active {
+    color: $footer-logo-active;
+  }
+}

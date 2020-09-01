@@ -9,6 +9,37 @@
 .advantages__item {
   padding-top: 55px;
   margin-bottom: 28px;
+  background-repeat: no-repeat;
+  background-position: 9px 0;
+}
+
+.advantages__item--flower {
+  background-image: url("../../img/icon-feature-flower.svg");
+}
+
+.advantages__item--money {
+  background-image: url("../../img/icon-feature-money.svg");
+  background-position: 0 0;
+}
+
+.advantages__item--heart {
+  background-image: url("../../img/icon-feature-heart.svg");
+  background-position: 6px 6px;
+}
+
+.advantages__item--ball {
+  background-image: url("../../img/icon-feature-ball.svg");
+  background-position: 2px 2px;
+}
+
+.advantages__item--rocket {
+  background-image: url("../../img/icon-feature-rocket.svg");
+  background-position: 0 5px;
+}
+
+.advantages__item--gift {
+  background-image: url("../../img/icon-feature-gift.svg");
+  background-position: 1px 2px;
 }
 
 @media (min-width: $tablet-width) {

@@ -31,6 +31,16 @@
   display: block;
   background-color: #ffffff;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $grey-1;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin common-wrapper {
@@ -46,5 +56,45 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     padding: 0 50px;
+  }
+}
+
+@mixin with-top-zigzag-line {
+  background: url("../../img/bg-zigzag-line.svg") repeat-x 0 5px;
+  background-size: 320px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-repeat: no-repeat;
+    background-position: center 25px;
+    background-size: 1050px;
+  }
+}
+
+@mixin with-bottom-zigzag-pseudo {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 18px;
+      background: url("../../img/bg-zigzag-fill.svg") repeat-x center 0;
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 24px;
+      background: url("../../img/bg-zigzag-fill.svg") repeat-x center 0;
+      background-size: 1250px auto;
+    }
   }
 }

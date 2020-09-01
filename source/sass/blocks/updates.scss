@@ -1,3 +1,14 @@
+.updates__link {
+  &:hover,
+  &:focus {
+    color: $navigation-link-hover;
+  }
+
+  &:active {
+    color: $navigation-link-active;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .updates {
     display: flex;
@@ -11,7 +22,7 @@
     margin-right: 0;
   }
 
-  .updates__item a {
+  .updates__link {
     padding-top: 17px;
     display: block;
   }

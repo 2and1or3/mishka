@@ -16,7 +16,7 @@
   line-height: 30px;
   margin: 0;
   text-align: center;
-  padding: 77px 0;
+  padding: 73px 0;
 }
 
 .header__bottom {
@@ -43,6 +43,10 @@
     background: linear-gradient(white 89px, $grey-5 89px, $grey-5 90px, $grey-6 90px, $grey-6 100%);
   }
 
+  .header--with-zigzag {
+    @include with-bottom-zigzag-pseudo;
+  }
+
   .header__top-wrapper {
     display: flex;
     align-items: flex-start;
@@ -57,7 +61,7 @@
   .header__title {
     font-size: 43px;
     line-height: 50px;
-    padding: 38px 0 78px;
+    padding: 38px 0 85px;
   }
 
   .header__delivery {
@@ -111,7 +115,7 @@
 
   .header__title {
     width: 100%;
-    padding: 51px 0 101px;
+    padding: 51px 0 112px;
     font-size: 53px;
     line-height: 57px;
   }

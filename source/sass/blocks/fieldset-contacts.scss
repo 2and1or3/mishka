@@ -5,6 +5,7 @@
 .fieldset-contacts__box {
   display: block;
   margin-bottom: 33px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -17,13 +18,46 @@
   border-bottom: 2px solid #000000;
   background-color: transparent;
   padding: 14px 0 13px;
+  padding-right: 40px;
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 17px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $control-hover;
+    outline: none;
+
+    & ~ .fieldset-contacts__icon {
+      color: $control-hover;
+    }
+  }
 }
+
 
 .fieldset-contacts__input--big {
   font-size: 19px;
   line-height: 19px;
+}
+
+.fieldset-contacts__icon {
+  position: absolute;
+  color: $grey-7;
+
+  &--phone {
+    bottom: 20px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--mail {
+    bottom: 6px;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -43,14 +77,39 @@
 
   .fieldset-contacts__input {
     padding: 12px 17px;
+    padding-right: 60px;
     box-sizing: border-box;
     font-size: 19px;
     line-height: 19px;
+  }
+
+  .fieldset-contacts__icon {
+    &--phone {
+      right: 27px;
+      bottom: 15px;
+    }
+
+    &--mail {
+      right: 22px;
+      bottom: 10px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .fieldset-contacts__input {
     padding-left: 24px;
+  }
+
+  .fieldset-contacts__icon {
+    &--phone {
+      right: 10px;
+      bottom: 15px;
+    }
+
+    &--mail {
+      right: 5px;
+      bottom: 10px;
+    }
   }
 }

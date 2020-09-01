@@ -3,14 +3,26 @@
   border-bottom: 1px solid $grey-3;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 27px;
+  padding: 0 52px 27px;
 }
 
 .social__link {
   width: 30px;
   height: 30px;
-  border: 1px solid red;
-  display: block;
+  display: flex;
+
+  &:hover,
+  &:focus {
+    color: $social-icon-hover;
+  }
+
+  &:active {
+    color: $social-icon-active;
+  }
+}
+
+.social__link svg {
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {

@@ -6,6 +6,15 @@
 .navigation__link {
   padding: 26px 26px 26px 75px;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    color: $navigation-link-hover;
+  }
+
+  &:active {
+    color: $navigation-link-active;
+  }
 }
 
 .navigation .logo-link {

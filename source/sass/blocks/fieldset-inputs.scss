@@ -7,10 +7,15 @@
   width: 100%;
   display: inline-block;
 
+  &:hover .fieldset-inputs__input {
+    border-bottom: 2px solid $control-hover;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
 }
+
 
 .fieldset-inputs__input {
   width: 100%;
@@ -20,6 +25,12 @@
   padding: 14px 0;
   font-size: 17px;
   line-height: 17px;
+
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $control-hover;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

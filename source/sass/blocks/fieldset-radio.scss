@@ -8,6 +8,14 @@
   vertical-align: middle;
   margin-bottom: 8px;
 
+  &:hover .fieldset-radio__custom-input {
+    border: 2px solid $control-hover;
+  }
+
+  &:active .fieldset-radio__custom-input {
+    border: 2px solid $control-active;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -35,6 +43,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.fieldset-radio__input:focus ~ .fieldset-radio__custom-input {
+  border: 2px solid $control-hover;
 }
 
 @media (min-width: $tablet-width) {

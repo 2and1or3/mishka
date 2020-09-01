@@ -1,3 +1,26 @@
+.cart {
+  position: relative;
+
+  &:hover .cart__icon,
+  &:focus .cart__icon {
+    color: $tools-icon-hover;
+  }
+
+  &:active .cart__icon {
+    color: $tools-icon-active;
+  }
+}
+
+.cart__icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $tools-icon;
+  width: 20px;
+  height: 19px;
+}
+
 @media (min-width: $tablet-width) {
   .cart {
     width: 263px;
