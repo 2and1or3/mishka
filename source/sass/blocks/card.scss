@@ -2,17 +2,14 @@
   display: block;
 }
 
+.card picture {
+  flex-shrink: 0;
+}
+
 .card__text-box {
+  @include with-shadow;
   border: 1px solid $grey-4;
   padding: 25px 27px 27px;
-
-  &:hover {
-    box-shadow: 0 5px 10px -5px $grey-1;
-  }
-
-  &:active {
-    box-shadow: 0 0 10px -5px $grey-1;
-  }
 }
 
 .card__title {
@@ -63,6 +60,8 @@
   right: 0;
   bottom: 0;
   color: $card-icon;
+  width: 21px;
+  height: 18px;
 }
 
 @media (min-width: $tablet-width) {

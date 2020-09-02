@@ -3,4 +3,25 @@
   top: 42%;
   left: 54%;
   transform: translate(-50%, -50%);
+  width: 67px;
+  height: 100px;
+}
+
+.map__img {
+  width: 322px;
+  height: 457px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__img {
+    width: 768px;
+    height: 457px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__img {
+    width: 525px;
+    height: 457px;
+  }
 }

@@ -3,8 +3,13 @@
   font-size: 17px;
   margin: 0;
   border: 1px solid $grey-5;
-  padding: 25px 25px 25px 90px;
+  padding: 25px 25px 22px 90px;
   position: relative;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .factory__title svg {
@@ -44,6 +49,7 @@
 }
 
 .factory__box {
+  @include with-shadow;
   border: 1px solid $grey-5;
   padding: 24px 33px 32px;
 }

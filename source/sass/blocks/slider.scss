@@ -34,10 +34,20 @@
 .slider__prev {
   border: none;
   border-right: 1px solid $grey-5;
+
+  svg {
+    width: 50px;
+    height: 26px;
+  }
 }
 
 .slider__next {
   border: none;
+
+  svg {
+    width: 50px;
+    height: 26px;
+  }
 }
 
 @media (min-width: $tablet-width) {

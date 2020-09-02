@@ -1,7 +1,9 @@
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
+$mobile-only: 767px;
 
+$retina-dppx: 1.5dppx;
 
 $green-1: #63d1bb;
 $green-2: #56c3b2;
@@ -15,6 +17,8 @@ $grey-7: #d3d2d2;
 
 $navigation-link-hover: rgba(0, 0, 0, 0.6);
 $navigation-link-active: rgba(0, 0, 0, 0.3);
+
+$toggle: rgba(0, 0, 0, 1);
 
 $tools-icon: $grey-7;
 $tools-icon-hover: $green-1;

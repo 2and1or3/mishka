@@ -35,9 +35,17 @@
 
 @media (min-width: $tablet-width) {
   .review-box {
-    background: url("../../img/review@1x.jpg") no-repeat 0 0;
     padding-top: 72px;
     padding-bottom: 110px;
+
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   .review-box__inner {
@@ -92,7 +100,15 @@
     padding-top: 65px;
     padding-bottom: 155px;
     padding-left: 170px;
-    background: url("../../img/review@1x.jpg") no-repeat 0 0;
+
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   .review-box__title {

@@ -15,31 +15,37 @@
 
 .advantages__item--flower {
   background-image: url("../../img/icon-feature-flower.svg");
+  background-size: 32px 37px;
 }
 
 .advantages__item--money {
   background-image: url("../../img/icon-feature-money.svg");
   background-position: 0 0;
+  background-size: 47px 27px;
 }
 
 .advantages__item--heart {
   background-image: url("../../img/icon-feature-heart.svg");
   background-position: 6px 6px;
+  background-size: 34px 27px;
 }
 
 .advantages__item--ball {
   background-image: url("../../img/icon-feature-ball.svg");
   background-position: 2px 2px;
+  background-size: 35px 34px;
 }
 
 .advantages__item--rocket {
   background-image: url("../../img/icon-feature-rocket.svg");
   background-position: 0 5px;
+  background-size: 55px 23px;
 }
 
 .advantages__item--gift {
   background-image: url("../../img/icon-feature-gift.svg");
   background-position: 1px 2px;
+  background-size: 33px 32px;
 }
 
 @media (min-width: $tablet-width) {

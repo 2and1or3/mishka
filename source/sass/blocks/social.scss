@@ -25,6 +25,21 @@
   margin: auto;
 }
 
+.social__inst-icon {
+  width: 22px;
+  height: 21px;
+}
+
+.social__fb-icon {
+  width: 15px;
+  height: 28px;
+}
+
+.social__tw-icon {
+  width: 23px;
+  height: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     border: none;

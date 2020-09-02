@@ -74,6 +74,16 @@
   }
 }
 
+@mixin with-shadow {
+  &:hover {
+    box-shadow: 0 5px 10px -5px $grey-1;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px -5px $grey-1;
+  }
+}
+
 @mixin with-bottom-zigzag-pseudo {
   @media (min-width: $tablet-width) {
     position: relative;

@@ -39,6 +39,11 @@
   @include grey-button;
 }
 
+.special__img {
+  width: 260px;
+  height: 315px;
+}
+
 @media (min-width: $tablet-width) {
   .special {
     padding-top: 40px;
@@ -91,6 +96,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 333px;
+    height: 404px;
   }
 }
 
@@ -106,6 +113,7 @@
   .special__header {
     position: relative;
     margin-bottom: 48px;
+    z-index: 2;
   }
 
   .special__label {
@@ -125,5 +133,10 @@
 
   .special__table {
     margin-bottom: 108px;
+  }
+
+  .special__img {
+    width: 525px;
+    height: 636px;
   }
 }
