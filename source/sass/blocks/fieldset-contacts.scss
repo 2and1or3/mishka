@@ -44,6 +44,7 @@
 .fieldset-contacts__icon {
   position: absolute;
   color: $grey-7;
+  z-index: -1;
 
   &--phone {
     bottom: 20px;
