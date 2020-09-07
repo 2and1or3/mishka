@@ -22,6 +22,8 @@
   box-sizing: border-box;
   font-size: 17px;
   line-height: 17px;
+  position: relative;
+  z-index: 1;
 
   &:hover,
   &:focus,
@@ -44,7 +46,6 @@
 .fieldset-contacts__icon {
   position: absolute;
   color: $grey-7;
-  z-index: -1;
 
   &--phone {
     bottom: 20px;
