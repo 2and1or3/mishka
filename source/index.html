@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="index-page">
@@ -14,14 +16,14 @@
           <nav class="header__nav">
             <ul class="header__list navigation">
               <li class="navigation__item header__toggle-box">
-                <a class="navigation__link navigation__logo-link logo-link" href="index.html">
+                <a class="navigation__link navigation__logo-link logo-link">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
                     <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
                     <img src="../img/logo-mobile.svg" alt="Логотип магазина Мишка" class="logo-link__img" width="86" height="35">
                   </picture>
                 </a>
-                <button class="header__toggle"></button>
+                <button class="header__toggle" aria-label="открыть/скрыть"></button>
               </li>
               <li class="navigation__item">
                 <a href="catalog.html" class="navigation__link">
@@ -47,7 +49,7 @@
               <svg class="cart__icon" width="20.294" height="18.849">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
-              <span class="cart__status">Корзина: пока пуста</span>
+              <a href="#cart" class="cart__status">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -256,11 +258,9 @@
           </address>
           <a href="#" class="contact-box__contact-button">Напишите нам</a>
           <div class="contact-box__map map">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-            </picture>
+            <iframe class="map__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716199638!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1599571575809!5m2!1sru!2sru"
+              allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
             <svg class="map__pin" width="66" height="100.801">
               <use xlink:href="img/sprite.svg#icon-map-pin"></use>
@@ -295,12 +295,31 @@
               </svg>
             </a></li>
         </ul>
-        <a class="copyright">
+        <a href="htmlacademy.ru" class="copyright">
           Разработано
           <img class="copyright__img" src="img/logo-htmlacademy.svg" alt="логотип htmlAcademy" width="27" height="34">
         </a>
       </div>
     </div>
   </footer>
+  <article class="popup">
+    <form class="popup__form size-form" action="https://echo.htmlacademy.ru" method="post">
+      <h3 class="size-form__title">Добавить в&nbsp;корзину</h3>
+      <p class="size-form__legend">Выберите размер:</p>
+
+      <div class="size-form__fieldset">
+        <input type="radio" name="size" class="size-form__input" id="size-s" value="s" checked>
+        <label for="size-s" class="size-form__label">s</label>
+
+        <input type="radio" name="size" class="size-form__input" id="size-m" value="m">
+        <label for="size-m" class="size-form__label">m</label>
+
+        <input type="radio" name="size" class="size-form__input" id="size-l" value="l">
+        <label for="size-l" class="size-form__label">l</label>
+      </div>
+      <button type="submit" class="size-form__submit">Добавить</button>
+    </form>
+  </article>
+  <script src="js/main.js"></script>
 </body>
 </html>

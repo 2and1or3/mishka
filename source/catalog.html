@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header header--open">
+  <header class="header header--with-zigzag header--open">
     <div class="wrapper wrapper--header">
       <div class="header__top">
         <div class="header__top-wrapper">
           <nav class="header__nav">
             <ul class="header__list navigation">
               <li class="navigation__item header__toggle-box">
-                <a class="navigation__link navigation__logo-link logo-link" href="index.html">
+                <a class="navigation__link navigation__logo-link logo-link" href="index.html" aria-label="На главную">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
                     <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
                     <img src="../img/logo-mobile.svg" alt="Логотип магазина Мишка" class="logo-link__img" width="86" height="35">
                   </picture>
                 </a>
-                <button class="header__toggle"></button>
+                <button class="header__toggle" aria-label="открыть/скрыть"></button>
               </li>
               <li class="navigation__item">
-                <a href="catalog.html" class="navigation__link">
+                <a class="navigation__link">
                   Каталог товаров
                 </a>
               </li>
@@ -47,7 +49,7 @@
               <svg class="cart__icon" width="20.294" height="18.849">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
-              <span class="cart__status">Корзина: пока пуста</span>
+              <a href="#cart" class="cart__status">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -193,12 +195,31 @@
               </svg>
             </a></li>
         </ul>
-        <a class="copyright">
+        <a href="htmlacademy.ru" class="copyright">
           Разработано
           <img class="copyright__img" src="img/logo-htmlacademy.svg" alt="логотип htmlAcademy" width="27" height="34">
         </a>
       </div>
     </div>
   </footer>
+  <article class="popup">
+    <form class="popup__form size-form" action="https://echo.htmlacademy.ru" method="post">
+      <h3 class="size-form__title">Добавить в&nbsp;корзину</h3>
+      <p class="size-form__legend">Выберите размер:</p>
+
+      <div class="size-form__fieldset">
+        <input type="radio" name="size" class="size-form__input" id="size-s" value="s" checked>
+        <label for="size-s" class="size-form__label">s</label>
+
+        <input type="radio" name="size" class="size-form__input" id="size-m" value="m">
+        <label for="size-m" class="size-form__label">m</label>
+
+        <input type="radio" name="size" class="size-form__input" id="size-l" value="l">
+        <label for="size-l" class="size-form__label">l</label>
+      </div>
+      <button type="submit" class="size-form__submit">Добавить</button>
+    </form>
+  </article>
+  <script src="js/main.js"></script>
 </body>
 </html>

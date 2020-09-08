@@ -140,6 +140,10 @@
     align-items: flex-start;
   }
 
+  .header__bottom {
+    background-color: transparent;
+  }
+
   .header__bottom-wrapper {
     max-width: initial;
     padding: 0;
@@ -183,6 +187,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .header__bottom {
+    background-color: $grey-2;
   }
 
   .header__bottom-wrapper {

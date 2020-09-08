@@ -67,6 +67,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .fieldset-radio {
+    padding-right: 340px;
+  }
+
   .fieldset-radio__label {
     display: block;
   }

@@ -12,6 +12,8 @@ const rename = require("gulp-rename");
 const del = require("del");
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
+const htmlmin = require("gulp-htmlmin");
+const jsuglify = require("gulp-uglify-es").default;
 
 task("clean", function() {
   return del("build");
@@ -19,6 +21,7 @@ task("clean", function() {
 
 task("html", function () {
   return src("source/*.html")
+    .pipe(htmlmin({collapseWhiteSpace: true}))
     .pipe(dest("build/"));
 });
 
@@ -37,6 +40,7 @@ task("css", function () {
 
 task("js", function () {
   return src("source/js/*.js")
+    .pipe(jsuglify())
     .pipe(dest("build/js"));
 });
 
