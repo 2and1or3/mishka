@@ -1,9 +1,9 @@
 .about {
-  padding: 39px 0 30px;
+  padding: 24px 0 30px;
 }
 
-.about--with-zigzag {
-  @include with-top-zigzag-line;
+.about__wrapper {
+  @include common-wrapper;
 }
 
 .about__title {
@@ -13,7 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 68px 0 83px;
+    padding: 48px 0 83px;
   }
 
   .about__title {
@@ -23,7 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 105px 0 91px;
+    padding: 55px 0 91px;
   }
 
   .about__box {

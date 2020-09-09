@@ -1,0 +1,18 @@
+.zigzag {
+  @include with-top-zigzag-line;
+  margin: 0;
+  padding-top: 15px;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag {
+    padding-top: 50px;
+  }
+}

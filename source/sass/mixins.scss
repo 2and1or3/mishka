@@ -47,6 +47,7 @@
   max-width: 260px;
   padding: 0 30px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
@@ -60,7 +61,7 @@
 }
 
 @mixin with-top-zigzag-line {
-  background: url("../../img/bg-zigzag-line.svg") repeat-x 0 5px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x 0 5px;
   background-size: 320px;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     background-repeat: no-repeat;
-    background-position: center 25px;
+    background-position: center;
     background-size: 1050px;
   }
 }
@@ -95,7 +96,7 @@
       left: 0;
       right: 0;
       height: 18px;
-      background: url("../../img/bg-zigzag-fill.svg") repeat-x center 0;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
       background-size: 768px auto;
     }
   }
@@ -103,7 +104,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       height: 24px;
-      background: url("../../img/bg-zigzag-fill.svg") repeat-x center 0;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
       background-size: 1250px auto;
     }
   }

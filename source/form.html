@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header header--with-zigzag header--open">
-    <div class="wrapper wrapper--header">
+    <div class="header__wrapper header__wrapper--responsive">
       <div class="header__top">
         <div class="header__top-wrapper">
           <nav class="header__nav">
+            <div class="header__logo-box">
+              <a href="index.html" class="logo-link" aria-label="На главную">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" alt="Логотип магазина Мишка" class="logo-link__img" width="86" height="35">
+                </picture>
+              </a>
+              <button class="header__toggle" aria-label="открыть/скрыть"></button>
+            </div>
             <ul class="header__list navigation">
-              <li class="navigation__item header__toggle-box">
-                <a class="navigation__link navigation__logo-link logo-link" href="index.html" aria-label="На главную">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-                    <img src="../img/logo-mobile.svg" alt="Логотип магазина Мишка" class="logo-link__img" width="86" height="35">
-                  </picture>
-                </a>
-                <button class="header__toggle" aria-label="открыть/скрыть"></button>
-              </li>
               <li class="navigation__item">
                 <a href="catalog.html" class="navigation__link">
                   Каталог товаров
@@ -75,7 +75,7 @@
     </div>
   </header>
   <main class="main-form">
-    <div class="wrapper">
+    <div class="main-form__wrapper">
       <p class="main-form__message">
         Мы будем рады воплотить в жизнь
         ваши пожелания! Заполните простую
@@ -190,14 +190,14 @@
         <textarea class="form__textarea" name="additional" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
 
-      <div class="form__wrapper wrapper">
+      <div class="form__wrapper">
         <span class="form__required">*Поля обязательны для заполнения</span>
         <button class="form__submit" type="submit">Отправить заказ</button>
       </div>
     </form>
   </main>
   <footer class="footer">
-    <div class="wrapper">
+    <div class="footer__wrapper">
       <div class="footer__inner">
         <a class="footer__logo logo-link">
           <svg class="logo-link__img" width="101.615" height="34.056">

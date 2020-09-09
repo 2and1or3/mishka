@@ -2,6 +2,10 @@
   padding: 22px 0 56px;
 }
 
+.main-form__wrapper {
+  @include common-wrapper;
+}
+
 .main-form__message {
   font-size: 13px;
   color: $grey-1;

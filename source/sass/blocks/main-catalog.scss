@@ -1,10 +1,7 @@
 .main-catalog {
+  @include common-wrapper;
   padding-top: 30px;
   padding-bottom: 60px;
-}
-
-.main-catalog__products {
-  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,19 +9,11 @@
     padding-top: 73px;
     padding-bottom: 62px;
   }
-
-  .main-catalog__products {
-    margin-bottom: 52px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog {
     padding-top: 120px;
     padding-bottom: 105px;
-  }
-
-  .main-catalog__products {
-    margin-bottom: 57px;
   }
 }

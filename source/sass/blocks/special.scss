@@ -3,6 +3,10 @@
   padding: 30px 0;
 }
 
+.special__wrapper {
+  @include common-wrapper;
+}
+
 .special__title {
   @include section-title;
   margin-bottom: 2px;

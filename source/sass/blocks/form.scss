@@ -9,6 +9,7 @@
 }
 
 .form__wrapper {
+  @include common-wrapper;
   margin-top: 11px;
 }
 
